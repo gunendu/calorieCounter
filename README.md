@@ -1,5 +1,4 @@
 Hotel Booking Example
-===============================
 
 The Hotel Booking example app demonstrates ([browse the source](https://github.com/revel/examples/tree/master/booking)):
 
@@ -144,3 +143,4 @@ ss</p>
 
 The [`field`](../manual/templates.html#field) template helper looks for errors in the validation context, using
 the field name as the key.
+# calorieCounter
