@@ -3,10 +3,9 @@ package controllers
 import (
 
 	"strings"
-	"fmt"	
+	"fmt"
+	"time"	
 	"database/sql"
-    
-    "golang.org/x/crypto/bcrypt"
     
 	"github.com/go-gorp/gorp"	
 	 _ "github.com/go-sql-driver/mysql"
@@ -19,6 +18,7 @@ import (
 
 var (
 	Dbm *gorp.DbMap
+	createdAt int64
 )
 
 func getParamString(param string, defaultValue string) string {
@@ -97,30 +97,24 @@ var  InitDB  func() = func()  {
 		"NameOnCard": 50,
 	})
 
-	t = Dbm.AddTable(models.Category{}).SetKeys(true, "Id")	
-
+	Dbm.AddTable(models.Category{}).SetKeys(true, "CategoryId")
+	
 	Dbm.TraceOn("[gorp]", r.INFO)
+	
+	createdAt  = time.Now().UnixNano() / int64(time.Millisecond)
+
+	categories := []*models.Category{
+		&models.Category{ 0,"Common Foods", createdAt, createdAt},
+		&models.Category{1,"PULSES AND LEGUMES", createdAt, createdAt},
+	}
+
+	for  _,  category  :=  range categories {
+		 if err := Dbm.Insert(category); err != nil{
+			 panic(err)
+		 }
+	}
+
 	Dbm.CreateTables()
-
-	bcryptPassword, _ := bcrypt.GenerateFromPassword(
-		[]byte("demo"), bcrypt.DefaultCost)
-	demoUser := &models.User{0, "Demo User", "demo", "demo", bcryptPassword}
-	if err := Dbm.Insert(demoUser); err != nil {
-		panic(err)
-	}
-
-	hotels := []*models.Hotel{
-		&models.Hotel{0, "Marriott Courtyard", "Tower Pl, Buckhead", "Atlanta", "GA", "30305", "USA", 120},
-		&models.Hotel{0, "W Hotel", "Union Square, Manhattan", "New York", "NY", "10011", "USA", 450},
-		&models.Hotel{0, "Hotel Rouge", "1315 16th St NW", "Washington", "DC", "20036", "USA", 250},
-	}
-	for _, hotel := range hotels {
-		if err := Dbm.Insert(hotel); err != nil {
-			panic(err)
-		}
-	}
-
-		
 }
 
 type GorpController struct {

@@ -1,11 +1,12 @@
 package models
 
 import (
+	
 )
 
 type Category struct {
-	Id 		int64  		`db: "primarykey, autoincrement" `
-	Name  string 	`db:",size:255"`
+	CategoryId		int
+	Name  string
 	UpdatedAt  int64
 	CreatedAt  int64
 }
