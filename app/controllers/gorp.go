@@ -100,10 +100,12 @@ var  InitDB  func() = func()  {
 	Dbm.AddTable(models.Category{}).SetKeys(true, "CategoryId")
 	
 	Dbm.TraceOn("[gorp]", r.INFO)
+
+	Dbm.CreateTablesIfNotExists()
 	
 	createdAt  = time.Now().UnixNano() / int64(time.Millisecond)
 
-	categories := []*models.Category{
+	/*categories := []*models.Category{
 		&models.Category{ 0,"Common Foods", createdAt, createdAt},
 		&models.Category{1,"PULSES AND LEGUMES", createdAt, createdAt},
 	}
@@ -112,9 +114,8 @@ var  InitDB  func() = func()  {
 		 if err := Dbm.Insert(category); err != nil{
 			 panic(err)
 		 }
-	}
-
-	Dbm.CreateTables()
+	}*/
+	
 }
 
 type GorpController struct {
