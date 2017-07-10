@@ -1,27 +1,68 @@
 package controllers
 
 import (
-	
+
+	"strings"
+	"fmt"	
 	"database/sql"
     
     "golang.org/x/crypto/bcrypt"
     
-	"github.com/go-gorp/gorp"
-	_ "github.com/mattn/go-sqlite3"
+	"github.com/go-gorp/gorp"	
+	 _ "github.com/go-sql-driver/mysql"
     
 	r "github.com/revel/revel"
-	"github.com/revel/modules/db/app"
 	
     "github.com/gunendu/calorieCounter/app/models"
+	"github.com/revel/revel"
 )
 
 var (
 	Dbm *gorp.DbMap
 )
 
-func InitDB() {
-	db.Init()
-	Dbm = &gorp.DbMap{Db: db.Db, Dialect: gorp.SqliteDialect{}}
+func getParamString(param string, defaultValue string) string {
+	p, found := revel.Config.String(param)
+	if !found {
+		if defaultValue == ""{
+			revel.ERROR.Fatal("could not find paramter " + param)
+		} else {
+			return defaultValue
+		}
+	}
+	return p
+}
+
+func getConnectionString() string {
+	host  :=  getParamString("db.host",  "")
+	port := getParamString("db,.port", "3306")
+	user := getParamString("db.user", "")
+    pass := getParamString("db.password", "")
+    dbname := getParamString("db.name", "auction")
+    protocol := getParamString("db.protocol", "tcp")
+    dbargs := getParamString("dbargs", " ")
+
+	if strings.Trim(dbargs, " ") != "" {
+        dbargs = "?" + dbargs
+    } else {
+        dbargs = ""
+    }
+    return fmt.Sprintf("%s:%s@%s([%s]:%s)/%s%s", 
+        user, pass, protocol, host, port, dbname, dbargs)
+
+}
+
+var  InitDB  func() = func()  {
+
+	connectionString := getConnectionString()
+	
+	if db,  err  :=  sql.Open("mysql", connectionString);  err  != nil {
+		 revel.ERROR.Fatal(err)
+	}  else {
+		Dbm = &gorp.DbMap{
+            Db: db, 
+            Dialect: gorp.MySQLDialect{"InnoDB", "UTF8"}}
+	}
 
 	setColumnSizes := func(t *gorp.TableMap, colSizes map[string]int) {
 		for col, size := range colSizes {
@@ -56,6 +97,8 @@ func InitDB() {
 		"NameOnCard": 50,
 	})
 
+	t = Dbm.AddTable(models.Category{}).SetKeys(true, "Id")	
+
 	Dbm.TraceOn("[gorp]", r.INFO)
 	Dbm.CreateTables()
 
@@ -76,6 +119,8 @@ func InitDB() {
 			panic(err)
 		}
 	}
+
+		
 }
 
 type GorpController struct {

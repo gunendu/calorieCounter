@@ -23,6 +23,6 @@ func (c BookingCounter) Run() {
 
 func init() {
 	revel.OnAppStart(func() {
-		jobs.Schedule("@every 1m", BookingCounter{})
+		jobs.Schedule("@every 100m", BookingCounter{})
 	})
 }
