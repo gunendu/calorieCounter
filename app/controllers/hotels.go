@@ -27,7 +27,7 @@ func (c Hotels) checkUser() revel.Result {
 
 func (c Hotels) Index() revel.Result {
 	results, err := c.Txn.Select(models.Booking{},
-		`select * from Booking where UserId = ?`, c.connected().UserId)
+		`select  *  from Booking where UserId = ?`, c.connected().UserId)
 	if err != nil {
 		panic(err)
 	}
