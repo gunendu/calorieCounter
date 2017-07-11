@@ -43,9 +43,9 @@ a {
 /** Header **/
 
 #header {
-    height: 200px;
+    height: 10px;
     position: relative;
-    background: #fff url(../img/hotel.jpg) 0px -90px no-repeat;
+    background: #fff url() 0px -90px no-repeat;
 }
 
 #header h1 {
