@@ -98,8 +98,11 @@ var  InitDB  func() = func()  {
 	})
 
 	Dbm.AddTable(models.Category{}).SetKeys(true, "CategoryId")
+
+	Dbm.AddTable(models.Nutrition{})
 	
 	Dbm.TraceOn("[gorp]", r.INFO)
+	 
 
 	Dbm.CreateTablesIfNotExists()
 	
@@ -107,7 +110,17 @@ var  InitDB  func() = func()  {
 
 	/*categories := []*models.Category{
 		&models.Category{ 0,"Common Foods", createdAt, createdAt},
-		&models.Category{1,"PULSES AND LEGUMES", createdAt, createdAt},
+		&models.Category{ 1,"PULSES AND LEGUMES", createdAt, createdAt},
+		&models.Category{ 2,"Leafy Vegetables", createdAt, createdAt},
+		&models.Category{ 3, "Roots and Tubers", createdAt, createdAt},
+		&models.Category{ 4, "Other Vegetables", createdAt, createdAt},
+		&models.Category{ 5, "Nuts and Oilseeds", createdAt, createdAt },
+		&models.Category{ 6, "Condiments and Spices", createdAt, createdAt },
+		&models.Category{ 7, "Fruits", createdAt, createdAt },
+		&models.Category{ 8 ,"Milk and Milk Products", createdAt, createdAt },
+		&models.Category{ 9 ,"Fats and Edible Oils", createdAt, createdAt },
+		&models.Category{10 ,"Sugars", createdAt, createdAt },
+		&models.Category{11 ,"Fatty Acids", createdAt, createdAt },		
 	}
 
 	for  _,  category  :=  range categories {

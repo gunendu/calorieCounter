@@ -7,6 +7,7 @@ module:jobs
 
 GET     /                                       Application.Index
 GET     /category                         Category.Index
+GET     /nutrition                           Nutrition.Index
 GET     /hotels                                 Hotels.Index
 GET     /hotels/list                            Hotels.List
 GET     /hotels/:id                             Hotels.Show

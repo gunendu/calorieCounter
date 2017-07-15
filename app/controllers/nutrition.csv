@@ -1,0 +1,401 @@
+Name of Food Stuff,Energy,Moisture,Protein,Fat,Minerals,Fibre,Carbos,Calcium,Phosphorous,Iron
+,(Kcals),(g),(g),(g),(g),(g),(g),(mg),(mg),(mg)
+,,,,,,,,,,
+common foods,,,,,,,,,,
+,,,,,,,,,,
+*Nutritive value / 100 gms of raw ingredients,,,,,,,,,,
+BAJRA,361,12,12,5,2,1,67,42,296,8
+BARLEY,336,12,11,1,1,4,70,26,215,2
+ITALIAN MILLET,331,11,12,4,3,8,61,31,290,3
+JOWAR,349,12,10,2,2,2,73,25,222,4
+"MAIZE, dry",342,15,11,4,1,3,66,10,348,2
+"MAIZE, tender",125,67,5,1,1,2,25,9,121,1
+PANIVARAGU,341,12,12,1,2,2,70,14,206,1
+RAGI,328,13,7,1,3,4,72,344,283,4
+"RICE, parboiled, handpounded",349,13,8,1,1,-,77,10,280,3
+"RICE, parboiled, milled",346,13,6,0,1,0,79,9,143,1
+"RICE, raw, handpounded",346,13,7,1,1,1,77,10,190,3
+"RICE, raw, milled",345,14,7,0,1,0,78,10,160,1
+"RICE, bran",393,11,13,16,7,4,48,67,1410,35
+"RICE, flakes",346,12,7,1,2,1,77,20,238,20
+"RICE, puffed",325,15,7,0,4,0,74,23,150,7
+SAMAI,341,11,8,5,1,8,67,17,220,9
+SANWA MILLET,307,12,6,2,4,10,65,20,280,5
+VARAGU,309,13,8,1,3,9,66,27,188,0
+"WHEAT, bulgar (parboiled)",356,10,8,2,1,2,77,37,298,5
+"WHEAT, whole",346,13,12,1,1,1,71,41,306,5
+"WHEAT, flour (whole)",341,12,12,2,3,2,69,48,355,5
+"WHEAT, flour (refined)",348,13,11,1,1,0,74,23,121,3
+"WHEAT, germ",397,5,29,7,3,1,53,40,846,6
+"WHEAT, semolina",348,-,10,1,-,0,75,16,102,2
+"WHEAT, vermicelli",352,12,9,0,1,0,78,22,92,2
+"WHEAT, bread (brown)",244,39,9,1,-,1,49,18,-,2
+"WHEAT, bread (white)",245,39,8,1,-,0,52,11,-,1
+,,,,,,,,,,
+PULSES AND LEGUMES,,,,,,,,,,
+,,,,,,,,,,
+"BENGAL GRAM, whole",360,10,17,5,3,4,61,202,312,5
+"BENGAL GRAM, dhal",372,10,21,6,3,1,60,56,331,5
+"BENGAL GRAM, roasted",369,11,22,5,2,1,58,58,340,9
+"BLACK GRAM, dhal",347,11,24,1,3,1,60,154,385,4
+COW PEA,323,13,24,1,3,3,54,77,414,9
+"FIELD BEAN, dry",347,10,25,1,3,1,60,60,433,3
+"GREAN GRAM, whole",334,10,24,1,3,4,57,124,326,4
+"GREEN GRAM, dhal",348,10,24,1,3,1,60,75,405,4
+"HORSE GRAM, whole",321,12,22,0,3,5,57,287,311,7
+"KHESARI, dhal",345,10,28,1,2,2,57,90,317,6
+LENTIL,343,12,25,1,2,1,59,69,293,7
+MOTH BEANS,330,11,24,1,3,4,56,202,230,9
+PEAS green,93,73,7,0,1,4,16,20,139,1
+PEAS dry,315,16,20,1,2,4,56,75,298,7
+PEAS roasted,340,10,23,1,2,4,59,81,345,6
+RAJMAH,346,12,23,1,3,5,61,260,410,5
+"REDGRAM, dhal",335,13,22,2,3,1,58,73,304,3
+REDGRAM (tender),116,65,10,1,1,6,17,57,164,1
+SOYABEAN,432,8,43,19,5,4,21,240,690,10
+,,,,,,,,,,
+Leafy Vegetables ,,,,,,,,,,
+,,,,,,,,,,
+AGATHI,93,73,8,1,3,2,12,1130,80,4
+AMARANTH caudatus,26,90,3,1,3,1,2,200,40,-
+AMARANTH gangeticus (tender),45,86,4,0,3,1,6,397,83,3
+AMARANTH gangeticus (stem),19,92,1,0,2,1,3,260,30,2
+AMARANTH paniculatus,67,79,6,1,4,2,9,530,60,18
+AMARANTH polygonoides,33,90,3,0,2,-,5,251,55,27
+AMARANTH spinosus,43,85,3,0,4,1,7,800,50,23
+AMARANTH species (Chakravarthikeerai),57,81,4,1,4,2,8,321,71,18
+AMARANTH  (Koyakeerai),37,88,3,0,1,2,5,292,51,2
+AMARANTH tristis,44,87,3,0,2,-,7,364,52,38
+AMARANTH viridis,38,82,5,0,3,6,4,330,52,19
+BEET GREENS,46,86,3,1,2,1,6,380,30,16
+BETEL LEAVES,44,85,3,1,2,2,6,230,40,11
+BOTTLE GOURD LEAVES,39,88,2,1,2,1,6,80,59,-
+BROAD BEAN LEAVES,71,78,6,0,1,4,11,111,149,-
+BRUSSELS SPROUTS,52,85,5,0,1,1,7,43,82,2
+CABBAGE,27,92,2,0,1,1,5,39,44,1
+CARROT LEAVES,77,77,5,0,3,2,13,340,110,9
+CAULIFLOWER GREENS,66,80,6,1,3,2,8,626,107,40
+CELERY LEAVES,37,88,6,1,2,1,2,230,140,6
+CELERY STALK,18,93,1,0,1,1,3,30,38,5
+COLOCASIA LEAVES (green),56,83,4,1,2,3,7,227,82,10
+COLOCASIA LEAVES (dried),277,9,14,6,13,16,42,1546,308,-
+CORIANDER LEAVES,44,86,3,1,2,1,6,184,71,1
+COW PEA LEAVES,38,89,3,1,2,1,4,290,58,20
+CURRY LEAVES,108,64,6,1,4,6,19,830,57,1
+DRUMSTICK LEAVES,92,76,7,2,2,1,12,440,70,1
+FENUGREEK LEAVES,49,86,4,1,1,1,6,395,51,2
+GOGU,56,86,2,1,1,-,10,172,40,2
+KNOL-KHOL GREENS,43,87,3,0,1,2,6,740,50,13
+KUPPAMENI,64,80,7,1,3,2,6,667,99,17
+LETTUCE,21,93,2,0,1,0,2,50,28,2
+"LETTUCE TREE LEAVES, mature",65,82,5,0,3,-,10,320,80,3
+"LETTUCE TREE LEAVES, tender",29,90,4,0,2,1,3,170,60,4
+MANATHAKKALI LEAVES,68,82,6,1,2,-,9,410,70,20
+MAYALU,32,91,3,0,2,-,4,200,35,10
+MINT,48,85,5,1,2,2,6,200,62,16
+MODAKANTHAN KEERAI,61,83,5,1,2,-,9,-,-,-
+MUKARRATE KEERAI,61,84,6,1,1,-,7,667,99,18
+MUSTARD LEAVES,34,90,4,1,2,1,3,155,26,16
+NERRINGI,68,79,7,0,5,-,9,1550,82,9
+PARSLEY,87,75,6,1,3,2,13,390,175,18
+PARUPPU KEERAI,27,90,2,1,2,1,3,111,45,15
+PONNANGANNI,73,77,5,1,2,3,12,510,60,2
+PUMPKIN LEAVES,57,82,5,1,3,2,8,392,112,-
+RADISH LEAVES,28,91,4,0,2,1,2,265,59,0
+RADISH LEAVES table,38,89,4,1,2,1,4,310,60,18
+RAPE LEAVES,48,85,5,0,2,1,6,370,110,12
+SAFFLOWER LEAVES,33,91,2,1,1,-,4,185,35,6
+SHEPU,37,88,3,0,2,1,5,190,42,17
+SPINACH,26,92,2,1,2,1,3,73,21,1
+SPINACH stalks,20,93,1,0,2,-,4,90,20,2
+SUSNI SAG,46,87,4,1,2,1,5,53,91,-
+"TAMARIND LEAVES, tender",115,70,6,2,1,2,18,101,140,0
+TURNIP GREENS,67,82,4,1,2,1,9,710,60,28
+,,,,,,,,,,
+Roots and Tubers ,,,,,,,,,,
+,,,,,,,,,,
+ARROW ROOT FLOUR,334,16,0,0,0,-,83,10,20,1
+BANANA RHIZOME,51,85,0,0,1,1,12,25,10,1
+BEET ROOT,43,88,2,0,1,1,9,18,55,1
+CARROT,48,86,1,0,1,1,11,80,530,1
+COLOCASIA,97,73,3,0,2,1,21,40,140,0
+KHAMALU,79,80,1,0,1,0,18,16,31,0
+MANGO GINGER,53,85,1,1,1,1,10,25,90,3
+PARSNIP,101,72,1,0,1,2,23,50,40,0
+POTATO,97,75,2,0,1,0,23,10,40,0
+RADISH pink,32,91,1,0,1,1,7,50,20,0
+RADISH rat-tailed,25,92,1,0,1,1,4,78,24,-
+RADISH table,16,95,0,0,1,1,3,20,20,1
+RADISH white,17,94,1,0,1,1,3,35,22,0
+SWEET POTATO,120,68,1,0,1,1,28,46,50,0
+TAPIOCA,157,59,1,0,1,1,38,50,40,1
+TAPIOCA chips dried,338,12,1,0,2,2,83,91,70,4
+TURNIP,29,92,0,0,1,1,6,30,40,0
+"YAM, elephant",79,79,1,0,1,1,18,50,34,1
+"YAM, ordinary",111,70,1,0,2,1,26,35,20,1
+"YAM, wild",110,70,2,0,1,1,24,20,74,1
+,,,,,,,,,,
+,,,,,,,,,,
+Other Vegetables ,,,,,,,,,,
+ASH GOURD,10,96,0,0,0,1,2,30,20,1
+"BEANS, scarlet runner",158,58,7,1,2,2,30,50,160,3
+BITTER GOURD,25,92,2,0,1,1,4,20,70,1
+BITTER GOURD small,60,83,2,1,1,2,11,23,38,2
+BOTTLE GOURD,12,96,0,0,0,1,2,20,10,0
+BRINJAL,24,93,1,0,0,1,4,18,47,0
+BROAD BEANS,48,85,4,0,1,2,7,50,64,1
+CAULIFLOWER,30,91,3,0,1,1,4,33,57,1
+CHO-CHO-MARROW,27,92,1,0,0,1,6,140,30,1
+CLUSTER BEANS,16,81,3,0,1,3,11,130,57,1
+COLOCASIA STEM,18,94,0,0,1,1,4,60,20,0
+COWPEA PODS,48,85,3,0,1,2,8,72,59,2
+CUCUMBER,13,96,0,0,0,0,2,10,25,1
+DOBLE BEANS,85,74,8,0,1,4,12,40,140,2
+DRUMSTICK,26,87,2,0,2,5,4,30,110,0
+DRUMSTICK flowers,50,86,4,1,1,1,7,51,90,-
+"FIELD BEANS, tender",48,86,4,1,1,2,7,210,68,1
+"FIGS, red (Ficus cunia)",53,79,1,1,2,6,11,187,39,-
+FRENCH BEANS,26,91,2,0,0,2,4,50,28,1
+GHOSALA,18,93,1,0,0,2,3,36,19,1
+GIANT CHILLIES (capsicum),24,92,1,0,1,1,4,10,30,0
+"JACK, tender",51,84,3,0,1,3,9,30,40,2
+"JACK FRUIT, seeds",133,64,7,0,1,1,26,50,97,1
+KANKODA,52,84,3,1,1,3,8,33,42,5
+KARONDA fresh,42,91,1,3,1,1,3,21,28,-
+KARONDA dry,364,18,2,10,3,-,67,160,60,39
+KOVAI,18,93,1,0,0,2,3,40,30,0
+KNOL-KHOL,21,93,1,0,1,1,4,20,35,1
+LADIES FINGERS,35,90,2,0,1,1,6,66,56,0
+"LAKUCH, raw",73,89,2,1,1,3,14,67,25,-
+LEEKS,77,79,2,0,1,1,17,50,70,2
+"LOTUS STEM, dry",234,9,4,1,8,25,51,405,128,60
+"MANGO, green",44,87,1,0,0,1,10,10,19,0
+"PAPAYA, green",27,92,1,0,0,1,6,28,40,1
+PARWAR,20,92,2,0,0,3,2,30,40,2
+PINK BEANS,44,87,3,0,1,2,7,54,70,1
+PLANTAIN flower,34,90,2,1,1,1,5,32,42,2
+PLANTAIN green,64,83,1,0,0,1,14,10,29,6
+PLANTAIN stem,42,88,0,0,1,1,10,10,10,1
+PUMPKIN fruit,25,93,1,0,1,1,5,10,30,0
+PUMPKIN flowers,39,89,2,1,1,1,6,120,60,-
+RIGDE GOURD,17,95,0,0,0,0,3,18,26,0
+SNAKE GOURD,18,95,0,0,0,1,3,26,20,1
+"SUNDAKAI, dry",269,12,8,2,5,18,55,390,180,22
+SWORD BEANS,44,87,3,0,1,1,8,60,40,2
+"TINDA, tender",21,93,1,0,0,1,3,25,24,1
+"TOMATO, green",23,93,2,1,1,1,4,20,36,2
+VEGETABLE MARROW,17,95,0,0,0,1,3,10,30,1
+,,,,,,,,,,
+Nuts and Oilseeds ,,,,,,,,,,
+,,,,,,,,,,
+ALMOND,655,5,21,59,3,2,10,230,490,5
+ARECANUT,249,31,5,4,1,11,47,50,130,1
+AVOCADOPEAR (nut),144,64,2,1,1,-,32,20,80,1
+CASHEWNUT,596,6,21,47,2,1,22,50,450,6
+CHILGOZA,615,4,14,49,3,1,29,91,494,4
+COCONUT dry,662,4,7,62,2,7,18,400,210,8
+COCONUT fresh,444,36,45,42,1,4,13,10,240,2
+COCONUT tender,41,91,1,1,1,-,6,10,30,1
+COCONUT milk,430,43,3,41,1,0,12,15,140,2
+COCONUT water,24,94,1,0,0,0,4,24,10,0
+"COCONUT meal, deoiled",312,9,24,3,7,10,48,112,646,69
+GARDEN CRESS SEEDS,454,3,25,24,6,8,33,377,723,100
+GINGELLY SEEDS,563,5,18,43,5,3,25,1450,570,9
+GROUNDNUT,567,3,25,40,2,3,26,90,350,2
+GROUNDNUT roasted,570,2,26,40,2,3,27,77,370,3
+GROUNDNUT cake,386,7,41,7,2,3,39,213,548,-
+LINSEED SEEDS,530,6,20,37,2,5,29,170,370,3
+MUSTARD SEEDS,541,8,20,40,4,2,24,490,700,8
+NIGER SEEDS,515,4,24,39,5,11,17,300,224,57
+PISTACHIO NUT,626,6,20,53,3,2,16,140,430,8
+PIYAL SEEDS,656,3,19,59,3,4,12,279,528,8
+SAFFLOWER SEEDS,356,5,13,26,3,35,18,236,823,5
+SUNFLOWER SEEDS,620,5,20,52,4,1,18,280,670,5
+WALNUT,687,4,16,64,2,3,11,100,380,3
+WALTER MELON SEEDS (kernal),628,4,34,53,4,1,4,100,937,7
+,,,,,,,,,,
+,,,,,,,,,,
+Condiments and Spices ,,,,,,,,,,
+,,,,,,,,,,
+ASAFOETIDA,297,16,4,1,7,4,68,690,50,39
+CARDAMOM,229,20,10,2,5,20,42,130,160,5
+CHILLIES dry,246,10,16,6,6,30,32,160,370,2
+CHILLIES green,29,86,3,1,1,7,3,30,80,4
+CLOVES dry,286,25,5,9,5,9,46,740,100,12
+CLOVES green,159,65,2,6,2,-,24,310,40,2
+CORIANDER,288,11,14,16,4,33,22,630,393,7
+CUMIN SEEDS,356,12,19,15,6,12,37,1080,511,12
+FENUGREEK SEEDS,333,14,26,6,3,7,44,160,370,6
+GINGR fresh,67,81,2,1,1,2,12,20,60,3
+LIME PEEL,129,66,2,0,2,-,29,710,60,3
+MANGO POWDER,337,7,3,8,5,14,64,180,16,45
+NUTMEG fruit,472,14,7,36,2,12,28,120,240,2
+NUTMEG rind,52,87,1,0,1,-,11,40,10,2
+OMUM,363,7,17,22,8,21,25,1525,443,12
+PEPPER DRY (black),304,18,11,7,4,15,49,460,198,12
+PEPPER GREEN,98,71,5,3,2,6,14,270,70,2
+PIPPALI,310,12,6,2,5,8,66,1230,190,62
+POPPY SEEDS,408,4,22,19,10,8,37,1584,432,16
+TAMARIND PULP,283,21,3,0,3,6,67,170,110,17
+TURMERIC,349,13,6,5,3,3,69,150,282,68
+,,,,,,,,,,
+,,,,,,,,,,
+Fruits ,,,,,,,,,,
+,,,,,,,,,,
+AMBADA,48,90,1,3,0,1,4,36,11,4
+AMLA,58,82,0,0,0,3,14,50,20,1
+APPLE,59,85,0,0,0,1,13,10,14,1
+APRICOT fresh,53,85,1,0,1,1,12,20,25,2
+APRICOT dry,306,19,2,1,3,2,73,110,70,5
+AVOCADO PEAR,215,74,2,23,1,-,1,10,80,1
+BAEL FRUIT,137,61,2,0,2,3,32,85,50,1
+"BANANA, ripe",116,70,1,0,1,0,27,17,36,0
+BANYAN TREE FIGS,72,74,2,2,2,8,12,364,43,-
+BILIMBI,19,94,0,0,0,1,3,15,10,1
+BREAD FRUIT,71,79,1,0,1,2,16,40,30,0
+BULLOCK'S HEART,70,77,1,0,1,5,16,10,10,1
+CAPE GOOSEBERRY,53,83,2,0,1,3,11,10,67,2
+CASHEW FRUIT,51,86,0,0,0,1,12,10,10,0
+"CHERRIES, red",64,83,1,0,1,0,14,24,25,0
+"CURRANTS, black",316,18,3,0,2,1,75,130,110,8
+DATES dried,617,15,2,0,2,4,76,120,50,7
+DATES fresh,144,59,1,0,1,4,34,22,38,1
+FIGS (Ficus carcia),37,88,1,0,1,2,8,80,30,1
+GRAPES blue variety,58,82,1,0,1,3,13,20,23,0
+GRAPES pale green variety,71,79,0,0,1,3,16,20,30,0
+GRAPE FRUIT marsh's seedless,45,88,1,0,0,-,10,30,30,0
+GRAPE FRUIT triumph,32,92,1,0,0,-,7,20,20,0
+"GUAVA, country",51,82,1,0,1,5,11,10,28,0
+"GUAVA, hill",38,85,0,0,1,5,9,50,20,1
+JACK FRUIT,88,76,2,0,1,1,20,20,41,0
+JAMBU FRUIT,62,84,1,0,0,1,14,15,15,0
+KORUKKAPALLI,78,79,3,0,1,1,16,14,49,1
+LAKUCH,66,82,1,1,1,2,13,50,20,0
+LEMON,57,85,1,1,0,2,11,70,10,0
+LEMON SWEET,35,90,1,0,0,0,7,30,20,1
+LICHI,61,84,1,0,0,0,14,10,35,1
+LIME,59,85,1,1,1,1,11,90,20,0
+"LIME, sweet malta",36,90,1,0,0,1,8,30,20,1
+"LIME, sweet musambi",43,88,1,0,1,0,9,40,30,1
+LOQUAT,43,88,1,0,0,1,10,30,20,1
+"MAHUA, ripe",111,74,1,2,1,-,23,45,22,0
+"MANGO, ripe",74,81,1,0,0,1,17,14,16,1
+MANGOSTEEN,60,85,1,0,0,-,14,10,20,0
+"MELON, musk",17,95,0,0,0,0,3,32,14,1
+"MELON, water",16,96,0,0,0,0,3,11,12,8
+MULBERRY,49,86,1,0,1,1,10,70,30,2
+ORANGE,48,88,1,0,0,0,11,26,20,0
+ORANGE juice,9,98,0,0,0,-,2,5,9,1
+PALMYRA FRUIT ripe (mesocarp),87,77,1,0,1,0,21,9,33,-
+PALMYRA FRUIT tender,29,92,1,0,0,0,6,10,20,0
+"PAPAYA, ripe",32,91,1,0,0,1,7,17,13,0
+PASSION FRUIT,54,76,1,0,1,10,12,10,60,2
+PASSION FRUIT juice,37,89,1,0,1,1,8,10,30,1
+PEACHES,50,86,1,0,1,1,10,15,41,2
+PEARS,52,86,1,0,0,1,12,8,15,0
+PERSIMMON,76,80,1,0,0,1,18,15,10,0
+PHALSA,72,81,1,1,1,1,15,129,39,3
+PINE APPLE,46,88,0,0,0,0,11,20,9,2
+PLUM,52,87,1,0,0,0,11,10,12,1
+POMEGRANATE,65,78,2,0,1,5,14,10,70,2
+PRUNES,56,8,0,0,1,0,13,10,18,-
+PUMMELO,44,88,1,0,0,1,10,30,30,0
+QUINCE,50,86,0,0,0,2,12,10,20,0
+RAISINS,308,20,2,0,2,1,75,87,80,8
+RASPBERRY,56,85,1,1,1,1,12,40,110,2
+ROSE APPLE,39,89,1,0,0,1,8,10,30,0
+SAPOTA,98,74,1,1,0,3,21,28,27,1
+SEETHAPHAL,104,70,2,0,1,3,23,17,47,4
+STRAWBERRY,44,88,1,0,0,1,10,30,30,2
+"TOMATO, ripe",20,94,1,0,0,1,4,48,20,1
+TOMATILLO,31,92,1,1,1,1,6,7,40,1
+TREE TOMATO,35,86,1,0,1,4,7,12,46,1
+WOOD APPLE,134,64,7,4,2,5,18,130,110,0
+ZIZYPHUS,74,82,1,0,0,-,17,4,9,0
+,,,,,,,,,,
+Milk and Milk Products,,,,,,,,,,
+,,,,,,,,,,
+MILK cow's,67,87,3,4,1,-,4,120,90,0
+CURDS,60,89,3,4,1,-,3,149,93,0
+BUTTER MILK,15,97,1,1,0,-,0,30,30,0
+"SKIMMED MILK, liquid",29,92,2,0,1,-,5,120,90,0
+CHANNA,265,57,18,21,3,-,1,208,138,-
+CHEESE,348,40,24,25,4,-,6,790,520,2
+KHOA (whole cow milk),413,25,20,26,4,-,25,956,613,-
+KHOA (whole buffalo),421,31,15,31,3,-,20,650,420,6
+WHOLE MILK POWDER (cow's),496,3,26,27,6,-,38,950,730,1
+SKIMMED MILK POWDER (cow's),357,4,38,0,7,-,51,1370,1000,1
+,,,,,,,,,,
+Fats and Edible Oils ,,,,,,,,,,
+,,,,,,,,,,
+BUTTER,729,19,-,81,2,-,-,-,-,-
+GHEE (cow),900,-,-,100,-,-,-,-,-,-
+HYDROGENATED OIL (fortified),900,-,-,100,-,-,-,-,-,-
+"COOKING OIL (Groundnut, Gingelly, Palmolein, Mustard, Coconut, etc.)",900,-,-,100,-,-,-,-,-,-
+,,,,,,,,,,
+Sugars ,,,,,,,,,,
+,,,,,,,,,,
+SUGAR CANE,398,0,0,0,0,-,99,12,1,0
+HONEY,319,21,0,0,0,-,79,5,16,1
+JAGGERY (cane),383,4,0,0,1,-,95,80,40,3
+JAGGERY (coconut palm),340,10,1,0,5,-,83,1638,62,-
+JAGGERY (date palm),353,10,1,0,3,-,86,363,62,-
+JAGGERY (fan palm),359,9,1,0,2,-,98,225,44,-
+JAGGERY (sago palm),349,9,2,0,4,-,85,1252,372,-
+SAGO,351,12,0,0,0,-,87,10,10,1
+SUGAR CANE JUICE,39,90,0,0,0,-,9,10,10,0
+,,,,,,,,,,
+Fatty Acids ,,,,,,,,,,
+,,,,,,,,,,
+COCONUT OIL,0,2,-,-,-,88,-,8,1,-
+CORN OIL,11,2,-,-,-,13,-,25,58,-
+COTTON SEED OIL,24,1,1,-,0,26,-,23,48,-
+GROUNDNUT OIL,13,2,4,2,0,21,1,48,30,-
+MUSTARD or RAPESEED OIL,3,1,7,-,-,11,1,9,18,14
+OLIVE OIL,11,2,-,-,-,14,-,71,8,-
+PALM OIL,42,4,-,-,-,48,-,38,9,-
+PALMOLEIN,42,3,-,-,-,48,0,41,10,0
+RICE BRAN OIL,16,2,-,-,-,19,-,39,33,-
+SAFLOWER OIL,8,2,1,-,-,11,-,18,78,-
+SESAME OIL,10,3,-,-,-,13,0,41,44,-
+SOYABEAN OIL,10,2,1,-,-,13,-,29,51,6
+SUNFLOWER OIL,6,2,1,-,0,9,-,25,66,-
+BUTTER,21,10,-,-,-,50,-,20,2,-
+,,,,,,,,,,
+Basic Preparations,,,,,,,,,,
+,,,,,,,,,,
+,Ingredients,Qty,Kcal,Gms,Gms,Gms,Gms,,,
+Chapati ,"Wheat flour,  Oil 1 tsp., Salt and Water",1 no.,147,21,3.6,5.5,1,,,
+Phulkas,"Wheat flour, Salt and Water",1 no.,51,10,1.8,0.3,0.5,,,
+Puri,"Wheat flour,  Oil 1 tsp., Salt and Water",1 no.,69,5,0.8,5.1,0,,,
+Plain paratha,"Wheat flour,   and Water",1 no.,141,10,1.8,10.25,0.5,,,
+Stuffed paratha,"Wheat flour, Potato, Oil 1 tsp. and Salt",1 no.,175,21,2.4,10.25,0.5,,,
+Bajra bhakri,"Bajra flour, ",1 no.,108,20,3.5,1.5,0,,,
+Jowar bhakri,"Jowar flour, Salt and Water",1 no.,105,22,3.1,0.6,0,,,
+Khakhra,"Wheat flour, Salt and Water",1 no.,51,10,1.8,0.3,0.5,,,
+Potato bhaji,"Potatoes, Oil 1 tsp. and Salt",1 katori,179,31,2.2,5.1,1,,,
+Potato wafers,"Potato, Oil, 1-1/2 tsp.s",1 katori,106,10,0.6,8,0,,,
+Potato tikki (shallow fried),"Potato, Chilli paste, Oil 1/2 tsp., Salt",1 no.,23,3.4,0.2,2.5,0,,,
+Potato tikki (deep fried),"Potato, Chilli paste, Oil 1 tsp., Salt",1 no.,60,3.4,0.2,5,0,,,
+Cooked rice,"Rice, Salt, Water",1 katori,104,23,2,0.2,0,,,
+Khichadi,"Rice, Moong dal",1 katori,104,20,4.7,0.3,0,,,
+Plain dal,"Toovar dal, Salt, Water",1 Katori,101,17,6.7,0.5,0,,,
+Dal with vaghar,"Toovar dal, Oil 1tsp., Salt, Water",1 Katori,146,17,6.7,5.5,0,,,
+Mung ki dal,"Mung dal, Salt, Water",1 Katori,104,18,7.4,0.2,0,,,
+Mung ki dal with Voghar,"Mung dal, Oil 1tsp., Salt, Water",1 katori,149,18,7.4,5.2,0,,,
+Masoor ki dal,"Masoor dal, Oil 1 tsp., Corriander leaves, Green chillies, Salt, Water",1 katori,149,18,7.6,5.2,0,,,
+Samosa,"Maida, Potato, Oil 2 tsp.s, Salt",1 no.,248,21,2.3,18.1,0,,,
+Sev,"Besan, Oil 2  tsp.s",1 katori,374,24,8.3,27.2,0,,,
+Methi muthia,"Methi, Wheat flour, Besan, Sugar, Oil 2 tsp.s, Salt",8 no.,188,10.4,3.7,13.8,0,,,
+Potato wada,"Potato, Besan, Oil 1/2 tsp., Salt",1 no.,118,22,3.1,3.7,0,,,
+French fries,"Potato, Oil 1 1/2 tsp.s",8-9 no.,140,16,1.1,8.1,0,,,
+Bread slices,,2 no.,98,20.7,3.1,0.2,0.08,,,
+Vegetable  -Sandwich,"Bread  slices, Butter, 1tsp.,  Green chutney, Tomato, Cucumber , Salt ",1 no. ,179,30,3.7,5.5,0.2,,,
+Idli,"Parboiled rice, Urad dal, Salt, Oil for greasing",1 no.,69,15,1.2,0.2,0,,,
+Dosa,"Rice, Urad dal, Poha, Ghee 1 tsp., Salt",1 no.,145,21.5,2.8,5.2,0,,,
+Green chutney,"Corriander, Coconut, Lemon juice, Green chillies, Sugar, Salt",1 Tb sp,34,5.7,0.2,1.2,0,,,
+Sambhaar,"Toovar dal, Tomato, Onion, Brinjal, Potato, Tamarind pulp, Sambhar masala, Oil 1 tsp., Salt",1 katori,200,27.2,8.9,5.9,0,,,
+Upma,"Semolina(rawa), Green peas, Carrots, Green chillies, Oil 1 tsp., Salt",1 katori,129,18,2.4,5.2,0,,,
+Pohe,"Rice flakes, Tomato, Lemon juice, Green Chilli, Oil 1 tsp.",1 katori,164,26,2.4,5.4,0,,,
+Khatta dhokla,"Rice, Urad dal, Curd, Chilli-Ginger paste, Hing, Black pepper, Oil 1 tsp., Salt, Milk",1 serving,217,31,6.3,6.1,0,,,
+Curd,-,1 bowl,234,10,8.6,13,0,,,
