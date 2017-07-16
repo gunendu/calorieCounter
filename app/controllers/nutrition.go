@@ -22,7 +22,21 @@ var (
 	categoryId          int
 )
 
-func (c Nutrition) Index() revel.Result {
+func (c Nutrition) Index() revel.Result {	
+	results, err := c.Txn.Select(models.Nutrition{},`select  *  From Nutrition `)
+	
+	if err !=nil {
+		panic(err)
+	}
+	var nutritions  []*models.Nutrition
+	for _, r  := range(results) {
+		b := r.(*models.Nutrition)
+		nutritions = append(nutritions,b)
+	}
+	return c.Render(nutritions)
+}
+
+func (c Nutrition) saveData() revel.Result {
 	file,  err  :=  os.Open("nutrition.csv")
 	if err != nil {
 			panic(err)
@@ -73,11 +87,8 @@ func (c Nutrition) Index() revel.Result {
 			categoryId = 15
 		case  "Fatty Acids":
 			categoryId = 16	
-			
-			
 		}
 		if len(record) > 2  && len(record[1])>1 {
-		fmt.Printf("%V",record)	
 		kcal,err := strconv.Atoi(record[1])
 		i, err  :=  strconv.Atoi(record[2])
 		j,err :=  strconv.Atoi(record[3])

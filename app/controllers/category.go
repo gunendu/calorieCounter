@@ -10,7 +10,6 @@ type Category struct {
 }
 
 func (c Category) Index() revel.Result {
-	revel.INFO.Printf("get all categories")
 	results, err := c.Txn.Select(models.Category{},
 		`select  *  from Category`)
 	if err != nil {
@@ -21,8 +20,18 @@ func (c Category) Index() revel.Result {
 		c := r.(*models.Category)
 		categories = append(categories,c)
 	}
-	revel.INFO.Printf("array of categories %v",categories[0])
-	return c.Render(categories)
+
+	res, err := c.Txn.Select(models.Nutrition{},`select  *  From Nutrition `)
+	
+	if err !=nil {
+		panic(err)
+	}
+	var nutritions  []*models.Nutrition
+	for _, r  := range(res) {
+		b := r.(*models.Nutrition)
+		nutritions = append(nutritions,b)
+	}
+	return c.Render(categories,nutritions)
 }
 
 

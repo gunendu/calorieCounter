@@ -1,15 +1,11 @@
 {{template "header.html" .}}
 
-<h1>All Categories</h1>
+<h1>Nutritive value / 100 gms of raw ingredients</h1>
 
-{{if not .categories}}
-<p>
-  No Categories Found
-</p>
-{{else}}
+{{if .categories}}
 <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-    <span class="caret"></span></button>    
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Pick a food category
+    <span class="caret"></span></button>
     <ul class="dropdown-menu">
       {{range .categories}}
       <li><a href="#">{{.Name}}</a></li>   
@@ -17,3 +13,44 @@
     </ul>
  </div>
 {{end}}
+
+{{if .nutritions}}
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name(Kcals)</th>
+        <th>Energy(g)</th>
+        <th>Moisture(g)</th>
+        <th>Proteins>(g)</th>
+        <th>Fats(g)</th>
+        <th>Minerals(g)</th>
+        <th>Fibre(g)</th>
+        <th>Carbos(g)</th>
+        <th>Calcium(mg)</th>
+        <th>Phosphorous(mg)</th>
+        <th>Iron(mg)</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{range .nutritions}}
+      <tr>
+        <td>{{.Name}}</td>
+        <td>{{.Energy}}</td>
+        <td>{{.Moisture}}</td>
+        <td>{{.Proteins}}</td>
+        <td>{{.Fat}}</td>
+        <td>{{.Minerals}}</td>
+        <td>{{.Fibre}}</td>
+        <td>{{.Carbos}}</td>
+        <td>{{.Calcium}}</td>
+        <td>{{.Phosphorous}}</td>
+        <td>{{.Iron}}</td>        
+      </tr>
+      {{end}}
+     </tbody>
+  </table>
+</div>
+{{end}} 
+
+
