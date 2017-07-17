@@ -3,10 +3,16 @@ package controllers
 import (
 	"github.com/revel/revel"
 	"github.com/gunendu/calorieCounter/app/models"
+	"fmt"
 )
 
 type Category struct {
 	Application
+}
+
+type Response struct {
+	category Category
+	nutrition Nutrition
 }
 
 func (c Category) Index() revel.Result {
@@ -20,18 +26,21 @@ func (c Category) Index() revel.Result {
 		c := r.(*models.Category)
 		categories = append(categories,c)
 	}
+	return c.RenderJSON(categories)
+}
 
-	res, err := c.Txn.Select(models.Nutrition{},`select  *  From Nutrition `)
-	
-	if err !=nil {
+func(c Category) Foods() revel.Result {
+	res, err  :=  c.Txn.Select(models.Nutrition{},`select * From Nutrition`)
+	if err != nil {
 		panic(err)
-	}
+	}	
 	var nutritions  []*models.Nutrition
-	for _, r  := range(res) {
+	for _,r  := range(res) {
 		b := r.(*models.Nutrition)
 		nutritions = append(nutritions,b)
 	}
-	return c.Render(categories,nutritions)
+	fmt.Print(nutritions)
+	return c.RenderJSON(nutritions)
 }
 
 
