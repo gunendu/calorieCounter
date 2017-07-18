@@ -11,6 +11,7 @@ GET     /category/foods                       Category.Foods
 GET    /category/:id                               Category.CategoryById
 GET     /nutrition/savedata                            Nutrition.SaveData
 POST    /nutrition/foods                      Nutrition.Foods
+GET  /nutrition/deleteitem/:id         Nutrition.DeleteFoodItem
 GET     /hotels                                 Hotels.Index
 GET     /hotels/list                           Hotels.List
 GET     /hotels/:id                             Hotels.Show

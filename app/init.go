@@ -28,7 +28,7 @@ var HeaderFilter = func(c *revel.Controller, fc []revel.Filter) {
                 "Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization")
 
         // Stop here for a Preflighted OPTIONS request.
-        if c.Request.Method == "OPTIONS" {		 
+        if c.Request.Method == "OPTIONS"{
                 return
         }
 

@@ -141,3 +141,13 @@ func (c NutritionCtrl) Foods() revel.Result {
 		}
 		return c.RenderJSON(nutrition)
 }
+
+func(c NutritionCtrl) DeleteFoodItem(id int) revel.Result {
+	_, err := Dbm.Exec("delete From Nutrition where Id = ? ",id)
+	
+	if err!= nil {
+		panic(err)
+	}
+
+	return c.RenderJSON(id)		
+}
