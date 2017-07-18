@@ -36,3 +36,12 @@ func(c Category) Foods() revel.Result {
 	}
 	return c.RenderJSON(nutritions)
 }
+
+func(c Category) CategoryById(id int) revel.Result {
+	category := models.Category{}
+	err := c.Txn.SelectOne(&category,`Select  *  From Category Where CategoryId = ? limit 1`,id)
+	if err!=nil {
+		panic(err)
+	}
+	return c.RenderJSON(category)
+}
