@@ -27,8 +27,10 @@ var HeaderFilter = func(c *revel.Controller, fc []revel.Filter) {
         c.Response.Out.Header().Set("Access-Control-Allow-Headers",
                 "Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization")
 
-        // Stop here for a Preflighted OPTIONS request.                                                                                                                                                     
+        // Stop here for a Preflighted OPTIONS request.
         if c.Request.Method == "OPTIONS" {
+		 c.Response.Out.Header().Set("Access-Control-Allow-Headers",
+                "Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization")
                 return
         }
 

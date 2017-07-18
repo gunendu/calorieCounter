@@ -6,9 +6,10 @@ module:testrunner
 module:jobs
 
 GET     /                                       Application.Index
-GET     /category                         Category.Index
-GET     /category/foods              Category.Foods
-GET     /nutrition                           Nutrition.Index
+GET     /category                               Category.Index
+GET     /category/foods                       Category.Foods
+GET     /nutrition                            Nutrition.Index
+POST    /nutrition/foods                      Nutrition.Foods
 GET     /hotels                                 Hotels.Index
 GET     /hotels/list                           Hotels.List
 GET     /hotels/:id                             Hotels.Show

@@ -1,17 +1,20 @@
 package controllers
 
 import (
+	"encoding/json"
 	"encoding/csv"
 	"io"
 	"os"
 	"strings"
-	"github.com/revel/revel"	
+	"github.com/revel/revel"
 	"fmt"
 	"strconv"
 	"github.com/gunendu/calorieCounter/app/models"
+	_"github.com/go-restit/lzjson"
+	"io/ioutil"
 )
 
-type Nutrition struct {
+type NutritionCtrl struct {
 	Application
 }
 
@@ -22,9 +25,9 @@ var (
 	categoryId          int
 )
 
-func (c Nutrition) Index() revel.Result {	
+func (c NutritionCtrl) Index() revel.Result {
 	results, err := c.Txn.Select(models.Nutrition{},`select  *  From Nutrition `)
-	
+
 	if err !=nil {
 		panic(err)
 	}
@@ -36,7 +39,7 @@ func (c Nutrition) Index() revel.Result {
 	return c.Render(nutritions)
 }
 
-func (c Nutrition) saveData() revel.Result {
+func (c NutritionCtrl) saveData() revel.Result {
 	file,  err  :=  os.Open("nutrition.csv")
 	if err != nil {
 			panic(err)
@@ -86,7 +89,7 @@ func (c Nutrition) saveData() revel.Result {
 		case  "Sugars":
 			categoryId = 15
 		case  "Fatty Acids":
-			categoryId = 16	
+			categoryId = 16
 		}
 		if len(record) > 2  && len(record[1])>1 {
 		kcal,err := strconv.Atoi(record[1])
@@ -99,7 +102,7 @@ func (c Nutrition) saveData() revel.Result {
 		o,err := strconv.Atoi(record[8])
 		p,err := strconv.Atoi(record[9])
 		q,err := strconv.Atoi(record[10])
-	
+
 		if err != nil {
 			panic(err)
 		}
@@ -108,12 +111,12 @@ func (c Nutrition) saveData() revel.Result {
 			&models.Nutrition{0,categoryId,record[0],kcal,i,j,k,l,m,n,o,p,q},
 		}
 
-		for _,  nut := range nutrition1 { 
+		for _,  nut := range nutrition1 {
 			if err := Dbm.Insert(nut); err != nil{
 				panic(err)
 			}
    		}
-		
+
 		fmt.Println(lineCount)
 		lineCount++
 	}
@@ -121,6 +124,18 @@ func (c Nutrition) saveData() revel.Result {
 	return nil
 }
 
+func (c NutritionCtrl) Foods() revel.Result {
+		b, err := ioutil.ReadAll(c.Request.Body)
+		if err !=nil {
+			panic(err)
+		}
+    	revel.INFO.Println(string(b))
+		//nutrition := models.Nutrition{}	
+		var content []string
+		err1 := json.NewDecoder(c.Request.Body).Decode(&content)
 
-
-
+		if err1 != nil {
+			panic(err1)
+		}
+		return c.RenderJSON(content)
+}
