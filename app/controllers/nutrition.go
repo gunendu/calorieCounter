@@ -39,7 +39,7 @@ func (c NutritionCtrl) Index() revel.Result {
 	return c.Render(nutritions)
 }
 
-func (c NutritionCtrl) saveData() revel.Result {
+func (c NutritionCtrl) SaveData() revel.Result {
 	file,  err  :=  os.Open("nutrition.csv")
 	if err != nil {
 			panic(err)
@@ -92,21 +92,21 @@ func (c NutritionCtrl) saveData() revel.Result {
 			categoryId = 16
 		}
 		if len(record) > 2  && len(record[1])>1 {
-		kcal,err := strconv.Atoi(record[1])
-		i, err  :=  strconv.Atoi(record[2])
-		j,err :=  strconv.Atoi(record[3])
-		k,err := strconv.Atoi(record[4])
-		l,err :=  strconv.Atoi(record[5])
-		m,err := strconv.Atoi(record[6])
-		n,err := strconv.Atoi(record[7])
-		o,err := strconv.Atoi(record[8])
-		p,err := strconv.Atoi(record[9])
-		q,err := strconv.Atoi(record[10])
+		kcal,err := strconv.ParseFloat(record[1],64)
+		i, err  :=  strconv.ParseFloat(record[2],64)
+		j,err :=  strconv.ParseFloat(record[3],64)
+		k,err := strconv.ParseFloat(record[4],64)
+		l,err :=  strconv.ParseFloat(record[5],64)
+		m,err := strconv.ParseFloat(record[6],64)
+		n,err := strconv.ParseFloat(record[7],64)
+		o,err := strconv.ParseFloat(record[8],64)
+		p,err := strconv.ParseFloat(record[9],64)
+		q,err := strconv.ParseFloat(record[10],64)
 
 		if err != nil {
 			panic(err)
 		}
-		fmt.Printf("%d %s %d %d %d %d %d %d %d %d %d %d",categoryId,record[0],kcal,i,j,k,l,m,n,o,p,q)
+		//fmt.Printf("%d %s %d %d %d %d %d %d %d %d %d %d",categoryId,record[0],kcal,i,j,k,l,m,n,o,p,q)
 		nutrition1 := []*models.Nutrition{
 			&models.Nutrition{0,categoryId,record[0],kcal,i,j,k,l,m,n,o,p,q},
 		}
@@ -125,17 +125,16 @@ func (c NutritionCtrl) saveData() revel.Result {
 }
 
 func (c NutritionCtrl) Foods() revel.Result {
-		b, err := ioutil.ReadAll(c.Request.Body)
+	    b, err := ioutil.ReadAll(c.Request.Body)
 		if err !=nil {
 			panic(err)
 		}
     	revel.INFO.Println(string(b))
-		//nutrition := models.Nutrition{}	
-		var content []string
-		err1 := json.NewDecoder(c.Request.Body).Decode(&content)
+		nutrition := models.Nutrition{}
+		err1 := json.Unmarshal([]byte(b), &nutrition)
 
 		if err1 != nil {
 			panic(err1)
 		}
-		return c.RenderJSON(content)
+		return c.RenderJSON(nutrition)
 }

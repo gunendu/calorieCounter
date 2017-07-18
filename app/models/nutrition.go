@@ -8,14 +8,14 @@ type  Nutrition  struct {
 	 Id 				 	 int64	 `db:"Id, primarykey, autoincrement"`
 	 CategoryId    int
 	 Name 		   string
-	 Energy        int
-	 Moisture    int
-	 Proteins     int
-	 Fat               int
-	 Minerals    int
-	 Fibre			 int
-	 Carbos       int
-	 Calcium     int
-	 Phosphorous   int
-	 Iron					  int
+	 Energy        float64
+	 Moisture    float64
+	 Proteins     float64
+	 Fat               float64
+	 Minerals    float64
+	 Fibre			 float64
+	 Carbos       float64
+	 Calcium     float64
+	 Phosphorous   float64
+	 Iron					  float64
 }

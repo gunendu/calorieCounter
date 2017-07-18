@@ -8,7 +8,7 @@ module:jobs
 GET     /                                       Application.Index
 GET     /category                               Category.Index
 GET     /category/foods                       Category.Foods
-GET     /nutrition                            Nutrition.Index
+GET     /nutrition/savedata                            Nutrition.SaveData
 POST    /nutrition/foods                      Nutrition.Foods
 GET     /hotels                                 Hotels.Index
 GET     /hotels/list                           Hotels.List
