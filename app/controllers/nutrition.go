@@ -129,12 +129,15 @@ func (c NutritionCtrl) Foods() revel.Result {
 		if err !=nil {
 			panic(err)
 		}
-    	revel.INFO.Println(string(b))
-		nutrition := models.Nutrition{}
-		err1 := json.Unmarshal([]byte(b), &nutrition)
+    	nutrition := models.Nutrition{}
+		err = json.Unmarshal([]byte(b), &nutrition)
 
-		if err1 != nil {
-			panic(err1)
+		if err != nil {
+			panic(err)
+		}
+
+		if err := Dbm.Insert(&nutrition); err !=nil{
+				panic(err)
 		}
 		return c.RenderJSON(nutrition)
 }
