@@ -14,13 +14,12 @@ type Preperations struct{
 }
 
 func(p *Preperations) PreInsert(s gorp.SqlExecutor) error {
-	p.CreatedAt = time.Now().UnixNano()
+	p.CreatedAt = time.Now().UnixNano()/int64(time.Millisecond)
 	p.UpdatedAt = p.CreatedAt
 	return nil
 }
 
 func(p *Preperations) PreUpdate(s gorp.SqlExecutor) error {
-	p.CreatedAt = time.Now().UnixNano()
-	p.UpdatedAt = p.CreatedAt
+	p.UpdatedAt = time.Now().UnixNano()/int64(time.Millisecond)
 	return nil
 }

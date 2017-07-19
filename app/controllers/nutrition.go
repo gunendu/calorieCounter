@@ -151,3 +151,17 @@ func(c NutritionCtrl) DeleteFoodItem(id int) revel.Result {
 
 	return c.RenderJSON(id)
 }
+
+func(c NutritionCtrl) FetchIngredients(query string) revel.Result {
+	fmt.Print("new query",query)
+	var nutritions = []*models.Nutrition{}
+	results, err := c.Txn.Select(models.Nutrition{},"Select * From Nutrition Where Name LIKE  ?","%"+query+"%")
+	if err != nil {
+		panic(err)
+	}
+	for _,res := range(results) {
+		b := res.(*models.Nutrition)
+		nutritions = append(nutritions,b)		
+	} 
+	return c.RenderJSON(nutritions)
+}
