@@ -25,7 +25,7 @@ func (c Category) Index() revel.Result {
 }
 
 func(c Category) Foods() revel.Result {
-	res, err  :=  c.Txn.Select(models.Nutrition{},`select * From Nutrition`)
+	res, err  :=  c.Txn.Select(models.Nutrition{},`select  *  From Nutrition`)
 	if err != nil {
 		panic(err)
 	}
