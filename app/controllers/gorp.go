@@ -100,6 +100,10 @@ var  InitDB  func() = func()  {
 	Dbm.AddTable(models.Category{}).SetKeys(true, "CategoryId")
 
 	Dbm.AddTable(models.Nutrition{})
+
+	Dbm.AddTable(models.Preperations{})
+
+	Dbm.AddTable(models.Ingredients{})
 	
 	Dbm.TraceOn("[gorp]", r.INFO)
 		

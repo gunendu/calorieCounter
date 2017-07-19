@@ -149,5 +149,5 @@ func(c NutritionCtrl) DeleteFoodItem(id int) revel.Result {
 		panic(err)
 	}
 
-	return c.RenderJSON(id)		
+	return c.RenderJSON(id)
 }
