@@ -14,6 +14,7 @@ POST    /nutrition/foods                      Nutrition.Foods
 GET  /nutrition/deleteitem/:id          Nutrition.DeleteFoodItem
 GET  /nutrition/:query                          Nutrition.FetchIngredients
 POST   /preperations/save                   Preperations.Save
+POST   /preperations/saveingredients   Preperations.SaveIngredients    
 GET     /hotels                                 Hotels.Index
 GET     /hotels/list                           Hotels.List
 GET     /hotels/:id                             Hotels.Show

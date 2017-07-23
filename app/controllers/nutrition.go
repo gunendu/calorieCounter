@@ -161,7 +161,7 @@ func(c NutritionCtrl) FetchIngredients(query string) revel.Result {
 	}
 	for _,res := range(results) {
 		b := res.(*models.Nutrition)
-		nutritions = append(nutritions,b)		
+		nutritions = append(nutritions,b)	
 	} 
 	return c.RenderJSON(nutritions)
 }
